@@ -122,16 +122,6 @@ img.flag
   stroke-width: 0;
 }
 
-.oceanxx
-{
-  color: #000000;
-  fill: #ffffff;
-  opacity: 1;
-  stroke: #000;
-  stroke-width: 0.5;
-  stroke-miterlimit: 1;
-}
-
 :root
 {
   --visited-country-fill: #FFDEA3;
