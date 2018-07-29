@@ -64,6 +64,27 @@ img.flag
   }
 }
 
+a.image-link
+{
+  text-decoration: none;
+  padding-right: 15px;
+}
+
+.social-svg
+{
+  width: 40px;
+  height: 40px;
+  fill: gray;
+}
+
+@media only screen and (max-device-width: 400px) {
+  .social-svg
+  {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 #map 
 {
   width: 85%;
