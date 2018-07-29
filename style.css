@@ -98,13 +98,13 @@ a.image-link
   fill: #e0e0e0;
   opacity: 0;
   stroke: #000000;
-  stroke-width: 0.5;
+  stroke-width: 0.5px;
 }
 
 .subxx
 {
   opacity: 0;
-  stroke-width: 0.3;
+  stroke-width: 0.3px;
 }
 
 .noxx
@@ -112,7 +112,7 @@ a.image-link
   fill: #e0e0e0;
   opacity: 0;
   stroke: #000000;
-  stroke-width: 0.5;
+  stroke-width: 0.5px;
 }
 
 .landxx
@@ -120,7 +120,7 @@ a.image-link
   fill: #e0e0e0;
   fill-rule: evenodd;
   stroke: #ffffff;
-  stroke-width: 0.5;
+  stroke-width: 0.5px;
 }
 
 .coastxx
@@ -128,7 +128,7 @@ a.image-link
   fill: #e0e0e0;
   fill-rule: evenodd;
   stroke: #ffffff;
-  stroke-width: 0.3;
+  stroke-width: 0.3px;
 }
 
 .limitxx
@@ -136,7 +136,7 @@ a.image-link
   fill: #e0e0e0;
   fill-rule: evenodd;
   stroke: #ffffff;
-  stroke-width: 0;
+  stroke-width: 0px;
 }
 
 .unxx
@@ -144,7 +144,7 @@ a.image-link
   fill: #e0e0e0;
   opacity: 0;
   stroke: #000000;
-  stroke-width: 0.3;
+  stroke-width: 0.3px;
 }
 
 .antxx
@@ -152,7 +152,7 @@ a.image-link
   fill: #e0e0e0;
   fill-rule: evenodd;
   stroke: #ffffff;
-  stroke-width: 0;
+  stroke-width: 0px;
 }
 
 :root
