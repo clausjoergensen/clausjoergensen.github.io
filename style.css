@@ -1,8 +1,8 @@
 html, body 
 { 
-	margin: 0px; 
-	padding: 0px;
-	overflow-x: hidden;
+  margin: 0px; 
+  padding: 0px;
+  overflow-x: hidden;
 }
 
 #title-box
@@ -61,10 +61,10 @@ img.flag
 
 #map 
 {
-	width: 85%;
-	height: 85%;
-	margin: auto;
-	display: block;
+  width: 85%;
+  height: 85%;
+  margin: auto;
+  display: block;
 }
 
 .circlexx
