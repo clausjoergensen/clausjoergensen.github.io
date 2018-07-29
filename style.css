@@ -5,25 +5,25 @@ html, body
 	overflow-x: hidden;
 }
 
-#info-box
-{
-  font-size: 20px; 
-  border-top: 1px solid #e0e0e0; 
-  font-family: 'Poppins', sans-serif; 
-  background-color: #F7F7F7;
-  padding-bottom: 40px;
-}
-
 #title-box
 {
   pointer-events: none; 
   font-family: 'Poppins', sans-serif; 
-  font-size: 40px; 
+  font-size: 2.5em; 
   position: absolute; 
-  margin-top: 250px; 
+  margin-top: 17%; 
   text-align: center; 
   left: 0px; 
   right: 0px;
+}
+
+#info-box
+{
+  font-size: 1.2em; 
+  border-top: 1px solid #E0E0E0; 
+  font-family: 'Poppins', sans-serif; 
+  background-color: #F7F7F7;
+  padding-bottom: 40px;
 }
 
 table#country-list
@@ -49,7 +49,14 @@ table#country-list td
 img.flag
 {
   height: 30px;
-  vertical-align: top;
+  vertical-align: middle;
+}
+
+@media only screen and (max-device-width: 400px) {
+  img.flag
+  {
+    height: 15px;
+  }
 }
 
 #map 
