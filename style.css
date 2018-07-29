@@ -155,48 +155,23 @@ a.image-link
   stroke-width: 0px;
 }
 
-:root
-{
-  --visited-country-fill: #FFDEA3;
-}
-
-/* Europe: 28 */
+/* Europe */
 .gb, .dk, .de, .nl, .es, .pt, .fr, .be, .lu, .pl, 
 .it, .sm, .va, .ch, .at, .cz, .sk, .gl, .no, .se, 
 .ee, .fi, .ua, .gr, .tr, .hu, .is, .li
-{
-  fill: var(--visited-country-fill);
-}
-
-/* Africa: 13 */
+/* Africa */
 .ma, .tn, .eg, .et, .ke, .ug, .tz, .mw, .zw, .zm, 
 .bw, .na, .za 
-{
-  fill: var(--visited-country-fill);
-}
-
-/* Asia: 11 */
+/* Asia */
 .ru, .in, .uz, .kz, .tj, .kg, .mn, .np, .th, .kh, 
 .vn
-{
-  fill: var(--visited-country-fill);
-}
-
-/* North America: 10 */
+/* North America */
 .us, .ca, .mx, .bz, .gt, .hn, .ni, .cr, .pa, .tt
-{
-  fill: var(--visited-country-fill);
-}
-
-/* South America: 12 */
+/* South America */
 .ec, .co, .gf, .gy, .sr, .br, .pe, .ar, .uy, .bo, 
 .cl, .py
-{
-  fill: var(--visited-country-fill);
-}
-
-/* Oceania: 2 */
+/* Oceania */
 .au, .nz
 {
-  fill: var(--visited-country-fill);
+  fill: #FFDEA3;
 }
