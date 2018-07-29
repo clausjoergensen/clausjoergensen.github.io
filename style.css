@@ -1,0 +1,132 @@
+html, body 
+{ 
+	margin: 0px; 
+	padding: 0px;
+	overflow: hidden;
+}
+
+#map 
+{
+	width: 85%;
+	height: 85%;
+	margin: auto;
+	display: block;
+}
+
+.circlexx
+{
+  fill: #e0e0e0;
+  opacity: 0;
+  stroke: #000000;
+  stroke-width: 0.5;
+}
+
+.subxx
+{
+  opacity: 0;
+  stroke-width: 0.3;
+}
+
+.noxx
+{
+  fill: #e0e0e0;
+  opacity: 0;
+  stroke: #000000;
+  stroke-width: 0.5;
+}
+
+.landxx
+{
+  fill: #e0e0e0;
+  fill-rule: evenodd;
+  stroke: #ffffff;
+  stroke-width: 0.5;
+}
+
+.coastxx
+{
+  fill: #e0e0e0;
+  fill-rule: evenodd;
+  stroke: #ffffff;
+  stroke-width: 0.3;
+}
+
+.limitxx
+{
+  fill: #e0e0e0;
+  fill-rule: evenodd;
+  stroke: #ffffff;
+  stroke-width: 0;
+}
+
+.unxx
+{
+  fill: #e0e0e0;
+  opacity: 0;
+  stroke: #000000;
+  stroke-width: 0.3;
+}
+
+.antxx
+{
+  fill: #e0e0e0;
+  fill-rule: evenodd;
+  stroke: #ffffff;
+  stroke-width: 0;
+}
+
+.oceanxx
+{
+  color: #000000;
+  fill: #ffffff;
+  opacity: 1;
+  stroke: #000;
+  stroke-width: 0.5;
+  stroke-miterlimit: 1;
+}
+
+:root
+{
+  --visited-country-fill: orange;
+}
+
+/* Europe: 28 */
+.gb, .dk, .de, .nl, .es, .pt, .fr, .be, .lu, .pl, 
+.it, .sm, .va, .ch, .at, .cz, .sk, .gl, .no, .se, 
+.ee, .fi, .ua, .gr, .tr, .hu, .is, .li
+{
+  fill: var(--visited-country-fill);
+}
+
+/* Africa: 13 */
+.ma, .tn, .eg, .et, .ke, .ug, .tz, .mw, .zw, .zm, 
+.bw, .na, .za 
+{
+  fill: var(--visited-country-fill);
+}
+
+/* Asia: 11 */
+.ru, .in, .uz, .kz, .tj, .kg, .mn, .np, .th, .kh, 
+.vn
+{
+  fill: var(--visited-country-fill);
+}
+
+/* North America: 10 */
+.us, .ca, .mx, .bz, .gt, .hn, .ni, .cr, .pa, .tt
+{
+  fill: var(--visited-country-fill);
+}
+
+/* South America: 12 */
+.ec, .co, .gf, .gy, .sr, .br, .pe, .ar, .uy, .bo, 
+.cl, .py
+{
+  fill: var(--visited-country-fill);
+}
+
+/* Oceania: 2 */
+.au, .nz
+{
+  fill: var(--visited-country-fill);
+}
