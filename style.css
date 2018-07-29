@@ -3,6 +3,12 @@ html, body
   margin: 0px; 
   padding: 0px;
   overflow-x: hidden;
+  background-color: #F7F7F7;
+}
+
+#top
+{
+  background-color: white;
 }
 
 #title-box
@@ -22,7 +28,6 @@ html, body
   font-size: 1.2em; 
   border-top: 1px solid #E0E0E0; 
   font-family: 'Poppins', sans-serif; 
-  background-color: #F7F7F7;
   padding-bottom: 40px;
 }
 
