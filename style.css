@@ -158,18 +158,18 @@ a.image-link
 /* Europe */
 .gb, .dk, .de, .nl, .es, .pt, .fr, .be, .lu, .pl, 
 .it, .sm, .va, .ch, .at, .cz, .sk, .gl, .no, .se, 
-.ee, .fi, .ua, .gr, .tr, .hu, .is, .li
+.ee, .fi, .ua, .gr, .tr, .hu, .is, .li,
 /* Africa */
 .ma, .tn, .eg, .et, .ke, .ug, .tz, .mw, .zw, .zm, 
-.bw, .na, .za 
+.bw, .na, .za,
 /* Asia */
 .ru, .in, .uz, .kz, .tj, .kg, .mn, .np, .th, .kh, 
-.vn
+.vn,
 /* North America */
-.us, .ca, .mx, .bz, .gt, .hn, .ni, .cr, .pa, .tt
+.us, .ca, .mx, .bz, .gt, .hn, .ni, .cr, .pa, .tt,
 /* South America */
 .ec, .co, .gf, .gy, .sr, .br, .pe, .ar, .uy, .bo, 
-.cl, .py
+.cl, .py,
 /* Oceania */
 .au, .nz
 {
