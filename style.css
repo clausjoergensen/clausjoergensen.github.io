@@ -45,6 +45,20 @@ table#country-list td
   vertical-align: top;
 }
 
+table#language-list
+{
+  padding: 0px;
+  margin: auto;
+  border-collapse: separate;
+  border-spacing: 40px 0px;
+}
+
+table#language-list td
+{
+  padding: 0px;
+  vertical-align: top;
+}
+
 .country
 {
   margin: 5px;
