@@ -39,6 +39,12 @@ table#country-list
   border-spacing: 40px 0px;
 }
 
+table#country-list a
+{
+  text-decoration: none;
+  color: black;
+}
+
 table#country-list td
 {
   padding: 0px;
