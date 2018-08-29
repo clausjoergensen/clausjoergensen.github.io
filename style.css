@@ -33,7 +33,22 @@ ul#country-list {
     column-gap: 0px;
     list-style: none;
     padding: 0px;
-    margin: 0% 8% 0% 8%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+@media only screen and (max-device-width:400px) {
+    ul#country-list {
+        column-count: 2;
+    }
+
+}
+
+@media only screen and (max-device-width:800px) {
+    ul#country-list {
+        column-count: 3;
+    }
+
 }
 
 ul#country-list a {
@@ -44,7 +59,7 @@ ul#country-list a {
 ul#country-list li {
     padding: 0px;
     vertical-align: top;
-    height: 30px;
+    height: 35px;
 }
 
 ul#language-list {
@@ -58,6 +73,7 @@ ul#language-list {
 ul#language-list li {
     padding: 0px;
     vertical-align: top;
+    height: 35px;
 }
 
 .country {
@@ -70,7 +86,7 @@ img.flag {
     vertical-align: middle;
 }
 
-@media only screen and (max-device-width:400px) {
+@media only screen and (max-device-width:800px) {
     img.flag {
         height: 15px;
     }
