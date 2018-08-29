@@ -30,10 +30,10 @@ html, body {
 ul#country-list {
     column-count: 4;
     column-fill: auto;
-    padding: 0px;
+    column-gap: 0px;
     list-style: none;
-    margin-left: 8%;
-    margin-right: 8%;
+    padding: 0px;
+    margin: 0% 8% 0% 8%;
 }
 
 ul#country-list a {
@@ -44,6 +44,7 @@ ul#country-list a {
 ul#country-list li {
     padding: 0px;
     vertical-align: top;
+    height: 30px;
 }
 
 ul#language-list {
