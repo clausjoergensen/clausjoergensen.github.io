@@ -1,197 +1,167 @@
-html, body
-{
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
-  background-color: #F7F7F7;
+html, body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background-color: #F7F7F7;
 }
 
-#top
-{
-  background-color: white;
+#top {
+    background-color: white;
 }
 
-#title-box
-{
-  pointer-events: none;
-  font-family: 'Poppins', sans-serif;
-  font-size: 2.5em;
-  position: absolute;
-  margin-top: 17%;
-  text-align: center;
-  left: 0px;
-  right: 0px;
+#title-box {
+    pointer-events: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    position: absolute;
+    margin-top: 17%;
+    text-align: center;
+    left: 0px;
+    right: 0px;
 }
 
-#info-box
-{
-  font-size: 1.2em;
-  border-top: 1px solid #E0E0E0;
-  font-family: 'Poppins', sans-serif;
-  padding-bottom: 40px;
+#info-box {
+    font-size: 1.2em;
+    border-top: 1px solid #E0E0E0;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 40px;
 }
 
-table#country-list
-{
-  padding: 0px;
-  margin: auto;
-  border-collapse: separate;
-  border-spacing: 40px 0px;
+ul#country-list {
+    column-count: 4;
+    column-fill: auto;
+    padding: 0px;
+    list-style: none;
+    margin-left: 8%;
+    margin-right: 8%;
 }
 
-table#country-list a
-{
-  text-decoration: none;
-  color: black;
+ul#country-list a {
+    text-decoration: none;
+    color: black;
 }
 
-table#country-list td
-{
-  padding: 0px;
-  vertical-align: top;
+ul#country-list li {
+    padding: 0px;
+    vertical-align: top;
 }
 
-table#language-list
-{
-  padding: 0px;
-  margin: auto;
-  border-collapse: separate;
-  border-spacing: 40px 0px;
+ul#language-list {
+    padding: 0px;
+    margin: auto;
+    column-count: 2;
+    list-style: none;
+    width: 400px;
 }
 
-table#language-list td
-{
-  padding: 0px;
-  vertical-align: top;
+ul#language-list li {
+    padding: 0px;
+    vertical-align: top;
 }
 
-.country
-{
-  margin: 5px;
-  border: 0px solid black;
+.country {
+    margin: 5px;
+    border: 0px solid black;
 }
 
-img.flag
-{
-  height: 30px;
-  vertical-align: middle;
+img.flag {
+    height: 30px;
+    vertical-align: middle;
 }
 
-@media only screen and (max-device-width: 400px) {
-  img.flag
-  {
-    height: 15px;
-  }
+@media only screen and (max-device-width:400px) {
+    img.flag {
+        height: 15px;
+    }
+
 }
 
-a.image-link
-{
-  text-decoration: none;
-  padding-right: 15px;
+a.image-link {
+    text-decoration: none;
+    padding-right: 15px;
 }
 
-.social-svg
-{
-  width: 40px;
-  height: 40px;
-  fill: gray;
+.social-svg {
+    width: 40px;
+    height: 40px;
+    fill: gray;
 }
 
-@media only screen and (max-device-width: 400px) {
-  .social-svg
-  {
-    width: 20px;
-    height: 20px;
-  }
+@media only screen and (max-device-width:400px) {
+    .social-svg {
+        width: 20px;
+        height: 20px;
+    }
+
 }
 
-#map
-{
-  width: 85%;
-  height: 85%;
-  margin: auto;
-  display: block;
+#map {
+    width: 85%;
+    height: 85%;
+    margin: auto;
+    display: block;
 }
 
-.circlexx
-{
-  fill: #e0e0e0;
-  opacity: 0;
-  stroke: #000000;
-  stroke-width: 0.5px;
+.circlexx {
+    fill: #e0e0e0;
+    opacity: 0;
+    stroke: #000000;
+    stroke-width: 0.5px;
 }
 
-.subxx
-{
-  opacity: 0;
-  stroke-width: 0.3px;
+.subxx {
+    opacity: 0;
+    stroke-width: 0.3px;
 }
 
-.noxx
-{
-  fill: #e0e0e0;
-  opacity: 0;
-  stroke: #000000;
-  stroke-width: 0.5px;
+.noxx {
+    fill: #e0e0e0;
+    opacity: 0;
+    stroke: #000000;
+    stroke-width: 0.5px;
 }
 
-.landxx
-{
-  fill: #e0e0e0;
-  fill-rule: evenodd;
-  stroke: #ffffff;
-  stroke-width: 0.5px;
+.landxx {
+    fill: #e0e0e0;
+    fill-rule: evenodd;
+    stroke: #ffffff;
+    stroke-width: 0.5px;
 }
 
-.coastxx
-{
-  fill: #e0e0e0;
-  fill-rule: evenodd;
-  stroke: #ffffff;
-  stroke-width: 0.3px;
+.coastxx {
+    fill: #e0e0e0;
+    fill-rule: evenodd;
+    stroke: #ffffff;
+    stroke-width: 0.3px;
 }
 
-.limitxx
-{
-  fill: #e0e0e0;
-  fill-rule: evenodd;
-  stroke: #ffffff;
-  stroke-width: 0px;
+.limitxx {
+    fill: #e0e0e0;
+    fill-rule: evenodd;
+    stroke: #ffffff;
+    stroke-width: 0px;
 }
 
-.unxx
-{
-  fill: #e0e0e0;
-  opacity: 0;
-  stroke: #000000;
-  stroke-width: 0.3px;
+.unxx {
+    fill: #e0e0e0;
+    opacity: 0;
+    stroke: #000000;
+    stroke-width: 0.3px;
 }
 
-.antxx
-{
-  fill: #e0e0e0;
-  fill-rule: evenodd;
-  stroke: #ffffff;
-  stroke-width: 0px;
+.antxx {
+    fill: #e0e0e0;
+    fill-rule: evenodd;
+    stroke: #ffffff;
+    stroke-width: 0px;
 }
 
 /* Europe */
-.gb, .dk, .de, .nl, .es, .pt, .fr, .be, .lu, .pl,
-.it, .sm, .va, .ch, .at, .cz, .sk, .gl, .no, .se,
-.ee, .fi, .ua, .gr, .tr, .hu, .is, .li,
-/* Africa */
-.ma, .tn, .eg, .et, .ke, .ug, .tz, .mw, .zw, .zm,
-.bw, .na, .za,
-/* Asia */
-.ru, .in, .uz, .kz, .tj, .kg, .mn, .np, .th, .kh,
-.vn,
-/* North America */
-.us, .ca, .mx, .bz, .gt, .hn, .ni, .cr, .pa, .tt,
-/* South America */
-.ec, .co, .gf, .gy, .sr, .br, .pe, .ar, .uy, .bo,
-.cl, .py,
-/* Oceania */
-.au, .nz
-{
-  fill: #FFDEA3;
+.gb, .dk, .de, .nl, .es, .pt, .fr, .be, .lu, .pl, .it, .sm, .va, .ch, .at, .cz, .sk, .gl, .no, .se, .ee, .fi, .ua, .gr, .tr, .hu, .is, .li,/* Africa */
+.ma, .tn, .eg, .et, .ke, .ug, .tz, .mw, .zw, .zm, .bw, .na, .za,/* Asia */
+.ru, .in, .uz, .kz, .tj, .kg, .mn, .np, .th, .kh, .vn,/* North America */
+.us, .ca, .mx, .bz, .gt, .hn, .ni, .cr, .pa, .tt,/* South America */
+.ec, .co, .gf, .gy, .sr, .br, .pe, .ar, .uy, .bo, .cl, .py,/* Oceania */
+.au, .nz {
+    fill: #FFDEA3;
 }
