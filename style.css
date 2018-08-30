@@ -20,11 +20,26 @@ html, body {
     right: 0px;
 }
 
+@media only screen and (max-device-width:800px) {
+    #title-box {
+        font-size: 1.8em;
+        margin-top: 10%;
+    }
+
+}
+
 #info-box {
     font-size: 1.2em;
     border-top: 1px solid #E0E0E0;
     font-family: 'Poppins', sans-serif;
     padding-bottom: 40px;
+}
+
+@media only screen and (max-device-width:800px) {
+    #info-box {
+        font-size: 1em;
+    }
+
 }
 
 ul#country-list {
@@ -37,16 +52,9 @@ ul#country-list {
     margin-right: 8%;
 }
 
-@media only screen and (max-device-width:400px) {
-    ul#country-list {
-        column-count: 2;
-    }
-
-}
-
 @media only screen and (max-device-width:800px) {
     ul#country-list {
-        column-count: 3;
+        column-count: 2;
     }
 
 }
@@ -64,9 +72,17 @@ ul#country-list li {
 ul#language-list {
     padding: 0px;
     margin: auto;
+    column-fill: auto;
     column-count: 2;
     list-style: none;
     width: 400px;
+}
+
+@media only screen and (max-device-width:800px) {
+    ul#language-list {
+        width: 300px;
+    }
+
 }
 
 ul#language-list li {
