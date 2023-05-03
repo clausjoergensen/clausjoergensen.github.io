@@ -44,8 +44,6 @@ html, body {
 
 ul#country-list {
     column-count: 4;
-    column-fill: auto;
-    column-gap: 0px;
     list-style: none;
     padding: 0px;
     margin-left: 8%;
