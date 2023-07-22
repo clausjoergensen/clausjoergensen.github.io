@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+    <meta charset="UTF-8">
+    <title>Yeast Converter</title>
+    <meta name="referrer" content="origin">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        #from_value {
+            width: 50px;
+            text-align: right;
+        }
+
+        #from_unit, #to_unit {
+            width: 80px;
+        }
+
+        #from_type, #to_type {
+            width: 120px;
+        }
+
+        select, input {
+            border: 1px solid #cccccc;
+            vertical-align: top;
+            min-height: 23px;
+        }
+
+        input, select, option {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;  
+        }
+    </style>
+    <script>
+        function yeast_type_name(unit) {
+            switch (unit) {
+                case "fy":
+                    return "Fresh Yeast"
+                case "ady":
+                    return "Active Dry Yeast"
+                case "iy":
+                    return "Instant Yeast"
+                default:
+                    return unit
+            }
+        }
+
+        function calculate() {
+            const e_from_value = document.getElementById("from_value")
+            const e_from_unit = document.getElementById("from_unit")
+            const e_from_type = document.getElementById("from_type")
+            
+            const e_to_unit = document.getElementById("to_unit")
+            const e_to_type = document.getElementById("to_type")
+
+            const from_value = parseFloat(e_from_value.value)
+            const from_unit = e_from_unit.options[e_from_unit.selectedIndex].value
+            const from_type = e_from_type.options[e_from_type.selectedIndex].value
+
+            const to_unit = e_to_unit.options[e_to_unit.selectedIndex].value
+            const to_type = e_to_type.options[e_to_type.selectedIndex].value
+
+            if (isNaN(from_value)) {
+                return
+            }
+
+            let from_value_in_grams = 0
+
+            if (from_unit == "g") {
+                from_value_in_grams = from_value
+            } else if (from_unit == "tsp") {
+                from_value_in_grams = from_value * 3.93
+            } else if (from_unit == "tbsp") {
+                from_value_in_grams = from_value * 11.8
+            } else if (from_unit == "oz") {
+                from_value_in_grams = from_value * 28.34
+            } 
+
+            let result = 0
+
+            switch (from_type) {
+                case "fy": // Fresh yeast
+                    switch (to_type) {
+                        case 'fy':
+                            result = from_value_in_grams
+                            break
+                        case 'ady':
+                            result = from_value_in_grams * 0.23
+                            break
+                        case 'iy':
+                            result = from_value_in_grams * 0.18
+                            break
+                    }
+                    break
+                case "ady": // Active Dry Yeast
+                    switch (to_type) {
+                        case 'fy':
+                            result = from_value_in_grams * 4.23
+                            break
+                        case 'ady':
+                        result = from_value_in_grams
+                            break
+                        case 'iy':
+                            result = from_value_in_grams * 0.8
+                            break
+                    }
+                    break            
+                case "iy": // Instant Yeast
+                    switch (to_type) {
+                        case 'fy':
+                            result = from_value_in_grams * 5.29
+                            break
+                        case 'ady':
+                            result = from_value_in_grams * 0.18
+                            break
+                        case 'iy':
+                            result = from_value_in_grams
+                            break
+                    }
+                    break                
+            }
+            
+            const e_result = document.getElementById("result")
+            e_result.innerHTML = from_value 
+            + from_unit 
+            + " <i>" + yeast_type_name(from_type) + "</i>"
+            + " is <b>" + result + to_unit + "</b>"
+            + " <i>" + yeast_type_name(to_type) + "</i>"
+        }
+    </script>
+</head>
+<body>
+    <h1>Yeast Converter</h1>
+    <table>
+        <tr>
+            <td>From&nbsp;</td>
+            <td>
+                <input id="from_value" placeholder="">
+            </td>
+            <td>
+                <select id="from_unit">
+                    <optgroup label="Volume">
+                        <option value="tsp">tsp</option>
+                        <option value="tbsp">tbsp</option>
+                    </optgroup>
+                    <optgroup label="Weight">
+                        <option value="g" selected>g</option>
+                        <option value="oz">oz</option>
+                    </optgroup>
+                </select>
+            </td>
+            <td>
+                <select id="from_type">
+                    <optgroup label="Type of Yeast">
+                        <option value="fy">Fresh yeast</option>
+                        <option value="ady">Active Dry Yeast</option>
+                        <option value="iy" selected>Instant Yeast</option>
+                    </optgroup>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>To</td>
+            <td></td>
+            <td>
+                <select id="to_unit">
+                    <option value="">Unit</option>
+                    <optgroup label="Volume">
+                        <option value="tsp">tsp</option>
+                        <option value="tbsp">tbsp</option>
+                    </optgroup>
+                    <optgroup label="Weight">
+                        <option value="g" selected>g</option>
+                        <option value="oz">oz</option>
+                    </optgroup>
+                </select>
+            </td>
+            <td>
+                <select id="to_type">
+                    <optgroup label="Type of Yeast">
+                        <option value="fy" selected>Fresh yeast</option>
+                        <option value="ady">Active Dry Yeast</option>
+                        <option value="iy">Instant Yeast</option>
+                    </optgroup>
+                </select>
+            </td>            
+        </tr>
+    </table>
+    <br />
+    <button onclick="calculate()">Calculate</button>
+    <br />
+    <br />
+    <div id="result"></div>
+</body>
+</html>
