@@ -124,12 +124,14 @@
                     break                
             }
             
+            
+
             const e_result = document.getElementById("result")
             e_result.innerHTML = from_value 
-            + from_unit 
-            + " <i>" + yeast_type_name(from_type) + "</i>"
-            + " is <b>" + result + to_unit + "</b>"
-            + " <i>" + yeast_type_name(to_type) + "</i>"
+                + from_unit 
+                + " <i>" + yeast_type_name(from_type) + "</i>"
+                + " is <b>" + result.toFixed(2) + to_unit + "</b>"
+                + " <i>" + yeast_type_name(to_type) + "</i>"
         }
     </script>
 </head>
