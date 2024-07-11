@@ -2,7 +2,20 @@
 <script lang="js">
   window.addEventListener('message', (event) => {
     if (event && event.data && event.data.name === "sp.loadConsent") {
-      document.body.innerHTML = "<pre>" + JSON.stringify(event.data, null, 1) + "</pre>"
+      const json = {
+        name: event.data.name,
+        consent: {
+          ccpa: {
+            uuid: event.data.consent.gdpr.uuid,
+            webConsentPayload: JSON.parse(event.data.consent.ccpa.webConsentPayload)
+          },
+          gpdr: {
+            uuid: event.data.consent.gdpr.uuid,
+            webConsentPayload: JSON.parse(event.data.consent.gdpr.webConsentPayload)
+          }
+        }
+      }
+      document.body.innerHTML = "<pre>" + JSON.stringify(json, null, 1) + "</pre>"
     }
   })
 </script>
