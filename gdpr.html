@@ -1,0 +1,14 @@
+<html>
+<script lang="js">
+  window.addEventListener('message', (event) => {
+    if (event && event.data && event.data.name === "sp.loadConsent") {
+      print(event.data.consents)
+    }
+  })
+</script>
+
+<body>
+
+</body>
+
+</html>
