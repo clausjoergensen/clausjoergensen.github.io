@@ -2,11 +2,15 @@
 <script lang="js">
   window.addEventListener('message', (event) => {
     if (event && event.data && event.data.name === "sp.loadConsent") {
-      document.body.innerHTML = JSON.stringify(event.data.consents)
+      document.body.innerHTML = "<pre>" + JSON.stringify(event.data, null, 1) + "</pre>"
     }
   })
 </script>
-
+<style>
+  body {
+    font-size: 32px;
+  }
+</style>
 <body>
 
 </body>
